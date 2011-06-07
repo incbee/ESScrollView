@@ -11,14 +11,6 @@
 
 @implementation ESScrollView
 
-- (id)initWithFrame:(NSRect)frame;
-{
-	NSLog(@"%p %s",self,__func__);
-	if (![super initWithFrame:frame])
-		return nil;
-	return self;
-}
-
 - (void)awakeFromNib;
 {
 //	NSLog(@"%p %s",self,__func__);
