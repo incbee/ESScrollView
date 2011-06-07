@@ -4,6 +4,12 @@
 
 This solution differs from many others by not requiring images -- all drawing is in code.
 
+## OS X 10.7 Compatibility
+
+With Mac OS X 10.7 (Lion), Apple introduced iOS-like scrolling without scrollbars by default.
+
+This obsoletes ESScrollView, and so on 10.7 and later ESScrollView will revert to the default scrolling behavior. If you don't want this please checkout the `pre-lion-compatibility` tag.
+
 ## License
 
 Copyright 2008 Jonathan Dann. All rights reserved.
