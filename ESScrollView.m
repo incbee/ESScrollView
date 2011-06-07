@@ -13,7 +13,6 @@
 
 - (void)awakeFromNib;
 {
-//	NSLog(@"%p %s",self,__func__);
 	NSRect horizontalScrollerFrame = [[self horizontalScroller] frame];
 	NSRect verticalScrollerFrame = [[self verticalScroller] frame];
 	NSString *scrollBarVariant = [[[NSUserDefaults standardUserDefaults] persistentDomainForName:NSGlobalDomain] valueForKey:@"AppleScrollBarVariant"];
@@ -22,7 +21,6 @@
 		[self setVerticalScroller:[[[ESiTunesScroller alloc] initWithFrame:verticalScrollerFrame] autorelease]];
 		[self setHorizontalScroller:[[[ESiTunesScroller alloc] initWithFrame:horizontalScrollerFrame] autorelease]];
 	}
-	
 }
 
 @end
